@@ -1,0 +1,171 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 0.14rem;
+}
+html{
+	font-size: 100px;
+	font-family:  PingFangSC-Regular,"Microsoft Yahei",arial;
+	height: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+body{
+	color: #666;
+	background: #f2f2f2;
+	min-height: 100%;
+}
+p{
+	max-height: 999999px;
+}
+img{
+	border: 0;
+	max-width: 750px;
+}
+.nav{
+	margin-top: 14px;
+	background: #fff;
+	height: 1.62rem;
+}
+ul,li{
+	list-style: none;
+}
+.nav li{
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.nav .classify{
+	width: 20%;
+}
+.nav .line{
+	width: 1px;
+	background: #eee;
+	height: 110px !important;
+	margin-top: 0.25rem;
+}
+.nav li img{
+	position: absolute;
+	left: 50%;
+	top: 0.3rem;
+	margin-left: -30px;
+	margin-bottom: 0.2rem;
+}
+.nav li:first-child{
+	width: 19%;
+}
+li p{
+	text-align: center;
+	font-size: 28px;
+	margin-top: 1.05rem;
+	color: #393939;
+}
+.navHover{
+	background: #42D7E8;
+	height: 6px;
+	width: 0.4rem;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -0.2rem;
+}
+
+.mulu{
+	width: 79.8%;
+	float: left;
+}
+.mulu ul{
+	height: 100%;
+	background: #eee;
+}
+.drug_con{
+	display: none;
+}
+.drug_tnb,.drug_hxxt,.drug_qt{
+	display: none;
+}
+.drugDisplay{
+	background: #fff;
+	margin-top: 14px;
+	height: 2.4rem;
+	width: 100%;
+}
+.drugDisplay .drug_img{
+	padding: 0;
+	margin: 0;
+	width: 41.2%;
+	height: 100%;
+	float: left;
+}
+.drugDisplay .drug_img img{
+	width: 100%;
+	max-width: 250px;
+	margin: 25px auto;
+	display: block;
+}
+.drugDisplay .drug_detail{
+	width: 58.8%;
+	float: left;
+	height: 100%;
+}
+.drug_detail p{
+	margin:0.24rem 0.24rem 0;
+}
+.drug_detail p:first-child{
+	font-size: 30px;
+	color: #393939;
+}
+.drug_detail p:nth-child(2){
+	color: #999999;
+	font-size: 24px;
+	line-height: 34px;
+}
+.drug_detail p:nth-child(3){
+	font-size: 32px;
+	color: #393939;
+	margin-top: 0.16rem  !important;
+	margin-bottom: 0.32rem;
+}
+.drug_detail p:nth-child(3) span{
+	width: 1.56rem;
+	height: 0.50rem;
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 24px;
+	color: #fff;
+	background: #F4848F;
+	border-radius: 10px;
+	float: right;
+	display: inline-block;
+}
+.spanActive{
+	background: #F4848F;
+}
+.spanDefault{
+	background: #b5b5b5 !important;
+}
+footer{
+	float: left;
+	width: 100%;
+	margin: 32px 0;
+	text-align: center;
+}
+footer span{
+	display: inline-block;
+}
+footer span:nth-child(2){
+	font-size: 24px;
+	color: #aaa;
+	text-align: center;
+	height: 26px;
+	line-height: 26px;
+	margin:  0 32px;
+	
+}
+footer span:first-child,footer span:last-child{
+	width: 120px;
+	height: 1px;
+	background: #aaa;
+	vertical-align:  middle;
+}

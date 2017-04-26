@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+
+		<title>药品详情</title>
+		<link rel="stylesheet" href="drugDetails.css" />
+		<link rel="stylesheet" type="text/css" href="swiper.min.css" />
+		<script src="swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//页面重构
+			var phoneWidth = parseInt(window.screen.width);
+			var phoneScale = phoneWidth / 750;
+			var ua = navigator.userAgent;
+			if(/Android (\d+\.\d+)/.test(ua)) {
+				var version = parseFloat(RegExp.$1);
+				if(version > 2.3) {
+					document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+				} else {
+					document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+				}
+			} else {
+				document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/tdf_pharmacy_xqbg.png"/></div>
+				<div class="swiper-slide"><img src="images/tdf_pharmacy_xqbg_pre.png"/></div>
+				<div class="swiper-slide"><img src="images/tdf_pharmacy_xqbg.png"/></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="drug-container">
+			<div class="drug-name">
+				<p>阿斯匹品阿斯匹品阿斯匹品<span>0.5mg*24粒</span></p>
+				<p>山东步长制药股份有限公司</p>
+				<p><span class="name-tip">处方药</span><span class="name-tip">医保乙类</span><span class="name-tip">医保乙类</span><span class="name-tip">医保乙类</span></p>
+			</div>
+			<div class="drug-details">
+				<div class="detail-box">
+					<p>[使用症状]</p>
+					<p>具有良好的解热镇痛作用，用于治感冒、发热、头痛、牙痛、关节痛、风湿病，还能抑制血小板聚集，用于预防和治疗缺血性心脏病、心绞痛、心肺梗塞。</p>
+				</div>
+				<div class="detail-box">
+					<p>[基础信息]</p>
+					<p>
+						通用名：阿司匹林<br />
+						英文名：ASIPILIN<br />
+					    规格：0.5mg*24粒<br />
+					    通用名：阿司匹林<br />
+						英文名：ASIPILIN<br />
+					    规格：0.5mg*24粒<br />
+					</p>
+				</div>
+				<div class="detail-box">
+					<p>[药品成分]</p>
+					<p>本品主要成分阿司匹林</p>
+				</div>
+				<div class="detail-box">
+					<p>[用量用法]</p>
+					<p>解热、镇痛，一次0.3—0.6g，一日3次，必要时每4小时1次。抑制血小板聚集，尚无明确用量，多数主张应用小剂量，如50—150mg，每24小时 1次。</p>
+				</div>
+				<div class="detail-box">
+					<p>[不良反应]</p>
+					<p>1.胃肠道症状是阿司匹林最常见的不良反应，较常见的症状有恶心、呕吐、上腹部不适或疼痛等。<br />
+							2.治疗剂量的阿司匹林对心血管没有重要的直接作用。大剂量可直接作用于血管平滑肌，而导致外周血管扩张。中毒剂量可通过直接和中枢性血管运动麻搏作用而抑制循环功能。<br />
+					</p>
+				</div>
+				<div class="detail-box">
+					<p>[注意事项]</p>
+					<p>解热、镇痛，一次0.3—0.6g，一日3次，必要时每4小时1次。抑制血小板聚集，尚无明确用量，多数主张应用小剂量，如50—150mg，每24小时 1次。</p>
+				</div>
+				<div class="detail-box">
+					<p>[禁忌症状]</p>
+					<p>12岁以下儿童可能引起瑞夷综合症（Reye'ssyndrome）高尿酸血症,长期使用可引起肝损害。妊娠期妇女避免使用。</p>
+				</div>
+				<div class="detail-box">
+					<p>[药理病理]</p>
+					<p>12岁以下儿童可能引起瑞夷综合症（Reye'ssyndrome）高尿酸血症,长期使用可引起肝损害。妊娠期妇女避免使用。</p>
+				</div>
+				<div class="detail-box">
+					<p>[药理相互作用]</p>
+					<p>12岁以下儿童可能引起瑞夷综合症（Reye'ssyndrome）高尿酸血症,长期使用可引起肝损害。妊娠期妇女避免使用。</p>
+				</div>
+			</div>
+			<div class="declare">
+				<p>声明：</p>
+				<p>1.商品说明书信息仅供参考，用药请在专业医生指导下进行；</p>
+				<p>2.商品售卖信息均来自具备合法资质的药店，如您对价格等信息有疑问请与涛大夫联系；</p>
+			</div>
+		</div>
+		<footer>
+			<a href="javascript:;">加入常用药</a>
+			<a href="javascript:;">加入处方</a>
+		</footer>
+		<script> 
+		var mySwiper = new Swiper('.swiper-container', {
+			 initialSlide :0,
+			 width : window.innerWidth,
+			 pagination : '.swiper-pagination',
+		})
+		</script>
+	</body>
+
+</html>
